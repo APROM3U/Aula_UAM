@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="header-cadastro">
+        <h2>
+            Formulário de inscrição
+        </h2>
+    </header>
+    <hr>
+    <article>
+        <fieldset>
+            <legend>
+                <strong>Cadastro</strong>
+            </legend>
+            <form action="../php/cadastro.php" method="post">
+                <label class="dados" for="nome">Nome <span>*</span></label>
+                <input type="text" id="nome" name="nome" autofocus required><br><br/>
+                <label class="dados" for="nasc">Data de nascimento <span>*</span></label>
+                <input type="date" name="nasc" id="nasc" required><br><br/>
+                <label class="dados" for="email">E-mail <span>*</span></label>
+                <input type="email" id="email" name="email" required><br><br/>
+                <label class="dados" for="genero">Sexo <span>*</span></label>
+                <input style="margin: 0;" type="radio" name="genero" id="masculino" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="outros" value="outros" required>
+                <label for="outros">Outros</label>
+                <label class="dados" for="info"><h4>Informações adicionais:</h3></label>
+                <textarea name="info" id="info" maxlength="350">
+                </textarea><br><br>
+                <div align="center">
+                    <button type="submit" id='enviar' >Enviar</button>
+                    <button type="reset"  id='reset'>Limpar</button>
+                    <button type="submit" id='voltar' onclick='history.go(-1)'>Voltar</button>
+                </div>
+            </form>
+        </fieldset>
+    </article>
+    
+</body>
+</html>

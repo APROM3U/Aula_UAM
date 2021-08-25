@@ -1,0 +1,115 @@
+:root {
+    --background-header-footer: #a9a9a9;
+    --background-section: #dcdcdc;
+    --color-col-1: #daa520;
+    --color-col-a: aliceblue;
+    --color-hr: blue; 
+    --color-head-cad: #fff;
+    --btn: white;
+    --btn-back: blue;
+}
+
+section {
+    width: 850px;
+    background-color: var(--background-section);
+    text-align: center;
+    margin: auto ;
+    padding-bottom: 30px;
+}
+
+header {
+    width: 850px;
+    height: 350px;
+    background-color: var(--background-header-footer);
+}
+
+#coluna-1 {
+   float: left;
+   width: 200px;
+   text-align: left;
+   font-size: 20px;
+   height: 425px;
+   background-color: var(--color-col-1);
+}
+
+#coluna-1, a{
+    color: var(--color-col-a);
+    text-decoration: none;
+}
+
+#coluna-2 {
+    font-size: 20px;
+    width: 750px;
+}
+
+#menu-navegacao {
+    list-style: none;
+}
+
+.tabela {
+   margin: auto;
+   border: none;
+   margin-bottom: 1px;
+}
+
+footer {
+    width: 850px;
+    background-color: var(--background-header-footer);
+    margin-bottom: 20px;
+    text-align: center;
+    float: left;
+}
+
+fieldset {
+    margin: auto;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.dados {
+    display: block;
+    font-weight: bolder;
+}
+
+hr {
+    border: 1px solid var(--color-hr);
+    width: 500px;
+}
+
+textarea {
+    resize: none;
+    text-align: left;
+    width: 450px;
+    height: 100px;
+}
+
+.header-cadastro {
+    width: 450px;
+    height: 30px;
+    background-color: var(--background-header-footer);
+    margin: 0 auto;
+    background-color: var(--color-head-cad);
+    color: var(--color-hr);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+H4 {
+    margin: 1rem 0 0.2rem 0;
+}
+
+button {
+    font: normal 16pt Arial;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--btn);
+    background: var(--btn-back);
+}
+
+legend {
+    font-size: 16pt;
+}
+
+
